@@ -1,3 +1,68 @@
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+body {
+    background-color: antiquewhite;
+}
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    text-shadow: 0 1px 0 #ccc, 
+                0 2px 0 #c9c9c9,
+                0 3px 0 #bbb,
+                0 4px 0 #b9b9b9,
+                0 5px 0 #aaa,
+                0 6px 1px rgba(31, 31, 31, 0.1),
+                0 0 5px rgba(0,0,0,.1),
+                0 1px 3px rgba(0,0,0,.3),
+                0 3px 5px rgba(0,0,0,.2),
+                0 5px 10px rgba(0,0,0,.25),
+                0 10px 10px rgba(0,0,0,.2),
+                0 20px 20px rgba(0,0,0,.15);
+    
+}
+.cards__container {
+    display: none;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.3rem;
+    margin: 0 auto;
+}
+.card__button {
+    color: rgb(255, 255, 255);
+    font-size: 5rem;
+    text-shadow: 0 1px 0 #ccc, 
+                0 2px 0 #c9c9c9,
+                0 3px 0 #bbb,
+                0 4px 0 #b9b9b9,
+                0 5px 0 #aaa,
+                0 6px 1px rgba(31, 31, 31, 0.1),
+                0 0 5px rgba(0,0,0,.1),
+                0 1px 3px rgba(0,0,0,.3),
+                0 3px 5px rgba(0,0,0,.2),
+                0 5px 10px rgba(0,0,0,.25),
+                0 10px 10px rgba(0,0,0,.2),
+                0 20px 20px rgba(0,0,0,.15);
+    background-image: url('../img/feuille.jpg');
+
+}
+.card__button,
+.card__container {
+    width: 10rem;
+    height: 10rem;
+    background-size: cover;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: rgba(107, 107, 107, 0.521) 0px 3px 6px;
+}
+.card__button:hover {
+    box-shadow: rgb(253, 246, 244) 0px 2px 7px;
+}
+.returned {
+    background-image: none;
+    background-color: rgb(156, 214, 175);
+}
