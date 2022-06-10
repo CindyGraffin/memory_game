@@ -5,7 +5,7 @@ const starterButton = document.querySelector('.starter__button');
 
 /* ========== CARDS CREATION ========== */
 /* array that contains card values */
-const sortedCardsValues = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
+const sortedCardsValues = ['🍌', '🍉', '🍒', '🍏', '🥝', '🍇', '🍓', '🍍', '🍌', '🍉', '🍒', '🍏', '🥝', '🍇', '🍓', '🍍'];
 const shuffleCardsValues = (cardsValues) => {
     let array = cardsValues
     let newArray = [];
@@ -27,7 +27,7 @@ const createCardButton = (cardValue) => {
             `
 } 
 /* function that creates a div element for each card value, adds it the class 'card__container', creates one button for each div and then append each div with its button to the cards container */
-const appendCards = (cardValues) => {
+const appendCards = (cardsValues) => {
     cardsValues.forEach((cardValue) => {
         let cardContainer = document.createElement('div');
         cardContainer.classList.add('card__container');
