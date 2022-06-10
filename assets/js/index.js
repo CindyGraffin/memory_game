@@ -53,6 +53,7 @@ starterButton.addEventListener('click', () => {
     cardsContainer.style.display = 'flex';
     appendCards(cardsValues);
     let cards = document.querySelectorAll('.card__button');
+    let returnedCards = []
     cards.forEach((card) => {
         card.addEventListener('click', () => {
             if (choosenCardsValues.length < 2) {
@@ -60,17 +61,23 @@ starterButton.addEventListener('click', () => {
                 choosenCardsValues.push(card.value);
                 card.classList.add('returned')
                 card.setAttribute('disabled', 'true');
+                returnedCards.push(card);
+                console.log(returnedCards)
                 if ((choosenCardsValues[0] !== choosenCardsValues[1]) && choosenCardsValues.length === 2) {
-                    let returnedCards = document.querySelectorAll('.returned');
+                    // let returnedCards = document.querySelectorAll('.returned');
                     returnedCards.forEach((retCard) => {
                         returnFalseCards(retCard);
                     })
+                    returnedCards = []
+
                 } else if ((choosenCardsValues[0] === choosenCardsValues[1]) && choosenCardsValues.length === 2) {
                     points += 1
+                    choosenCardsValues = [];
                     if (points === 8) {
                         console.log('You win !');
-                        choosenCardsValues = [];
                     }
+                    returnedCards = []
+
                 }
             }
         })
