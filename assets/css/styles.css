@@ -5,6 +5,7 @@ body {
     background-color: rgb(253, 247, 214);
 }
 h1 {
+    margin-top: -0.2rem;
     text-align: center;
     font-size: 4rem;
     color: rgb(253, 253, 247);
@@ -81,14 +82,15 @@ h2 {
 .win__container {
     display: none;
 }
-.win__container p {
+.win__container p,
+.loose__container p {
     font-size: 2rem;
     font-weight: 600;
     color: rgb(221, 112, 139);
 
 }
 h3.timer__container {
-    margin-top: -1.5rem;
+    margin-top: -1.8rem;
     margin-bottom: 1.5rem;
     color: rgb(221, 112, 139);
     display: flex;

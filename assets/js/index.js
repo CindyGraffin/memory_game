@@ -47,7 +47,7 @@ const returnFalseCards = (retCard) => {
         retCard.classList.remove('returned')
         retCard.innerHTML =''
         choosenCardsValues = [];
-    }, 300)
+    }, 600)
 }
 /* function that take care of the first card returned and push its value in the returned cards array */
 const firstReturnedCardCare = (card, returnedCards) => {
